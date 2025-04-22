@@ -20,18 +20,24 @@ while True:
     print(f"Computer threw {computer_turn}")
 
     if turn == "rock" and computer_turn == "scissors":
-        print("You win!")
+        print("You win!\n")
         player_wins += 1
     elif turn == "paper" and computer_turn == "rock":
-        print("You win!")
+        print("You win!\n")
         player_wins += 1
     elif turn == "scissors" and computer_turn == "paper":
-        print("You win!")
+        print("You win!\n")
         player_wins += 1
+    elif turn == computer_turn:
+        print("Go again, no points!\n")
     else:
-        print("You lose, git gud!")
+        print("You lose, git gud!\n")
         computer_wins += 1
 
-print(f"You won {player_wins} times.")
+print(f"\nYou won {player_wins} times.")
 print(f"The computer won {computer_wins} times.")
+if player_wins > computer_wins:
+    print("You are the Rock Paper Scissors MASTER!")
+else:
+    print("Git gud, sucka!")
 print("Game over!")
