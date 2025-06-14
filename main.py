@@ -1,7 +1,7 @@
 import random
 
 
-def main():
+def main() -> None:
     player_wins = 0
     computer_wins = 0
 
